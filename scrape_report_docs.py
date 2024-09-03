@@ -494,7 +494,7 @@ def get_secondary_findings(variants):
 
     ### here Nov 5
     
-    #variants.to_csv('/Users/caow3/Documents/scraping_turnaround/Variants.csv')
+
     variants= pd.read_csv('Variants.csv')
     variants  = variants.dropna(subset=['Batch_Received'])
     secondary = variants[variants['Tags'].str.contains('Secondary finding', na = False)]
